@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width">
+
+  <title>grid</title>
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<style>
+  . {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color:#030336;
+  }
+
+  main {
+background-color:#030336;
+    gap: 10px;
+    margin: 150px;
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: 300px 120px 200px;
+  }
+
+  .one {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color:#ff5100;;
+    width:500px; 
+    
+  }
+
+  .two {
+    grid-column-start:3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color:orange;
+    width:150px; 
+  }
+
+  .three {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background-color: green;
+    width:350px; 
+  }
+
+  .four {
+    grid-column-start:2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width:150px 150px; 
+    
+  
+    background-color:#005fc4;
+  }
+
+  .five {
+    grid-column-start:2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color:#005fc4;
+    width:150px 150px; 
+  }
+</style>
+
+</head>
+  <body>
+
+  <main>
+
+    <div class="one"></div>
+
+    <div class="two"></div>
+
+    <div class="three"></div>
+
+    <div class="four"></div>
+
+    <div class="five"></div>
+  </main>
+  </body>
+</html>
+
